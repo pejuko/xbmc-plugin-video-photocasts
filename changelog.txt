@@ -1,3 +1,6 @@
+version 0.3
+* eden
+
 Version 0.2
 * added icon.png
 
