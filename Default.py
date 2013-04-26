@@ -79,6 +79,8 @@ def feeds(url, type='Video'):
         fs = get_feeds(url, 'channel/item')
         for feed in fs:
                 name = feed.find('title').text
+                if name == None:
+                        continue
                 enclosure = feed.find('enclosure')
                 if enclosure == None:
                         continue
